@@ -4,4 +4,5 @@ class Solution:
         while True:
             if i*i>x:
                 return i-1
-            i+=1
+            else:
+                i+=1
