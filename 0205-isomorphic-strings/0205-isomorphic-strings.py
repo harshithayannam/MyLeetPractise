@@ -22,9 +22,9 @@ class Solution:
         print(my_dict)
         if flag==1:
             return False
-        elif len(set(s))==len(my_dict):
-            return True
+        # elif len(set(s))==len(my_dict):
+        #     return True
         else:
-            return False
+            return True
         
          
