@@ -10,12 +10,11 @@ class Solution:
                     else:
                         flag=1
                         break
-                elif t[i] in my_dict.values():
+                my_dict[s[i]]=t[i]
+                print(my_dict.values()) 
+                if len(set(my_dict.values())) != len(my_dict.values()):
                     flag=1
                     break
-                else:
-                    my_dict[s[i]]=t[i]
-                    print(my_dict.values())            
         else:
             return False
         
