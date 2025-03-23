@@ -1,8 +1,9 @@
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
-        count = 0
-        for i in range(len(nums)):
-            for j in range(i+1, len(nums)):
-                if nums[i] == nums[j]:
-                    count+= 1
-        return count
+        pairs = 0
+        new_nums = list(set(nums))
+        for i in range(len(new_nums)):
+            val = new_nums[i]
+            dup = nums.count(val)
+            pairs += (dup*(dup-1))//2
+        return pairs
